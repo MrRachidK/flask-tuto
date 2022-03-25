@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoom sur une chaîne</title>
+</head>
+<body>
+    {% extends "base.html" %} 
+    {% block title %} 
+    Zoom sur une chaine
+    {% endblock  %} 
+    {% block content %} 
+    <h1>{{channel.title}}</h1>
+    <a href="{{channel.url}}">Visiter la chaîne</a>
+    <p>
+    <img src={{channel.image_url}} alt="Image de la chaîne" width=400/>
+    </p>
+    <p>{{channel.description}}</p>
+    <p>Langue : {{channel.language}}</p>
+    <p>Les sujets abordés : {{channel.subjects}}</p>
+    {% endblock  %} 
+
+</body>
+</html>
